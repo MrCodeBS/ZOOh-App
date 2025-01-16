@@ -383,104 +383,102 @@
     background: #374151;
 }
 
-    </style>
+</style>
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="#" class="logo">🦁 WildLife Zoo</a>
+            <a href="#" class="logo">🦁 Wildtier Zooh</a>
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#animals">Animals</a>
+                <a href="#home">Startseite</a>
+                <a href="#animals">Tiere</a>
                 <a href="#tickets">Tickets</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact">Kontakt</a>
             </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>WildLife Zoo</h1>
-            <p>Experience nature's wonders in an immersive journey</p>
-            <a href="#tickets" class="cta-button">Book Your Adventure</a>
+            <h1>Wildtier Zooh</h1>
+            <p>Erleben Sie die Wunder der Natur auf einer unvergesslichen Reise</p>
+            <a href="#tickets" class="cta-button">Buchen Sie Ihr Abenteuer</a>
         </div>
     </section>
-    
 
     <section id="animals" class="section">
-        <h2 class="section-title">Our Animals</h2>
+        <h2 class="section-title">Unsere Tiere</h2>
         <div class="animals-grid">
             <div class="animal-card">
-                <img src="./hassan-pond-2022.jpg" alt="Lion" class="animal-img">
+                <img src="./hassan-pond-2022.jpg" alt="Löwe" class="animal-img">
                 <div class="animal-info">
-                    <h3>African Lion</h3>
-                    <p>Experience the power and majesty of our lion pride in their natural habitat.</p>
+                    <h3>Afrikanischer Löwe</h3>
+                    <p>Erleben Sie die Kraft und Majestät unseres Löwenrudels in ihrer natürlichen Umgebung.</p>
                 </div>
             </div>
             <div class="animal-card">
-                <img src="./SURYODAY_ELEPHANT_SURAJ-1800x900.jpg" alt="Elephant" class="animal-img">
+                <img src="./SURYODAY_ELEPHANT_SURAJ-1800x900.jpg" alt="Elefant" class="animal-img">
                 <div class="animal-info">
-                    <h3>Asian Elephant</h3>
-                    <p>Watch our intelligent elephants interact and play in their spacious sanctuary.</p>
+                    <h3>Asiatischer Elefant</h3>
+                    <p>Beobachten Sie, wie unsere intelligenten Elefanten in ihrem großzügigen Schutzgebiet interagieren und spielen.</p>
                 </div>
             </div>
             <div class="animal-card">
-                <img src="./GettyImages-dv735012-0663e2057be948d1b8a906c8fdfa97a2.jpg" alt="Penguin" class="animal-img">
+                <img src="./GettyImages-dv735012-0663e2057be948d1b8a906c8fdfa97a2.jpg" alt="Pinguin" class="animal-img">
                 <div class="animal-info">
-                    <h3>Emperor Penguin</h3>
-                    <p>Dive into the world of our charismatic penguins in their arctic environment.</p>
+                    <h3>Kaiserpinguin</h3>
+                    <p>Tauchen Sie ein in die Welt unserer charismatischen Pinguine in ihrer arktischen Umgebung.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="tickets" class="section">
-        <h2 class="section-title">Book Your Tickets</h2>
+        <h2 class="section-title">Buchen Sie Ihre Tickets</h2>
         <form class="ticket-form" id="ticketForm">
             <div class="form-group">
-                <label for="name">Full Name</label>
+                <label for="name">Vollständiger Name</label>
                 <input type="text" id="name" required>
             </div>
             <div class="form-group">
-                <label for="age">Age</label>
+                <label for="age">Alter</label>
                 <input type="number" id="age" required min="0">
             </div>
             <div class="form-group">
-                <label for="gender">Gender</label>
+                <label for="gender">Geschlecht</label>
                 <select id="gender" required>
-                    <option value="">Select gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
+                    <option value="">Geschlecht auswählen</option>
+                    <option value="male">Männlich</option>
+                    <option value="female">Weiblich</option>
+                    <option value="other">Divers</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="ticketType">Ticket Type</label>
+                <label for="ticketType">Ticketart</label>
                 <select id="ticketType" required>
-                    <option value="">Select ticket type</option>
-                    <option value="adult">Adult ($30)</option>
-                    <option value="child">Child ($15)</option>
-                    <option value="senior">Senior ($20)</option>
-                    <option value="family">Family Pack ($75)</option>
+                    <option value="">Ticketart auswählen</option>
+                    <option value="adult">Erwachsener (30 €)</option>
+                    <option value="child">Kind (15 €)</option>
+                    <option value="senior">Senior (20 €)</option>
+                    <option value="family">Familienpaket (75 €)</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="visitDate">Visit Date</label>
+                <label for="visitDate">Besuchsdatum</label>
                 <input type="date" id="visitDate" required>
             </div>
-            <button type="submit" class="ticket-submit">Generate Ticket</button>
+            <button type="submit" class="ticket-submit">Ticket erstellen</button>
         </form>
     </section>
-
-    Untitled
 
     <!-- Add this to your modal HTML -->
     <div class="modal" id="ticketModal">
         <div class="modal-content">
-            <h2>Your Ticket</h2>
+            <h2>Ihr Ticket</h2>
             <div id="ticketPreview"></div>
             <div id="qrcode" style="display: none;"></div>
-            <button class="close-modal" onclick="closeModal()">Close</button>
+            <button class="close-modal" onclick="closeModal()">Schließen</button>
         </div>
     </div>
 <script src="script.js"></script>
+
