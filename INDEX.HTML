@@ -332,6 +332,57 @@
             }
         }
         
+        .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #1F2937;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#ticketPreview {
+    margin: 2rem 0;
+}
+
+.download-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #10B981, #059669);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.close-modal {
+    background: #1F2937;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+    background: #374151;
+}
+
     </style>
 </head>
 <body>
@@ -420,13 +471,15 @@
         </form>
     </section>
 
+    Untitled
+
+    <!-- Add this to your modal HTML -->
     <div class="modal" id="ticketModal">
         <div class="modal-content">
             <h2>Your Ticket</h2>
-            <div class="ticket-details" id="ticketDetails"></div>
-            <div id="qrcode"></div>
+            <div id="ticketPreview"></div>
+            <div id="qrcode" style="display: none;"></div>
             <button class="close-modal" onclick="closeModal()">Close</button>
         </div>
     </div>
-
 <script src="script.js"></script>
