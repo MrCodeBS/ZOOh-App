@@ -173,14 +173,14 @@ check_collision:
     ; Check boundaries
     mov al, [snake]
     cmp al, 0
-    jl .game_over
+    jl game_over
     cmp al, 24
-    jge .game_over
+    jge game_over
     mov dl, [snake+1]
     cmp dl, 0
-    jl .game_over
+    jl game_over
     cmp dl, 80
-    jge .game_over
+    jge game_over
 
     ; Check collision with food
     mov al, [snake]
@@ -200,7 +200,7 @@ eat_food:
     ret
 
 ; Game over handling
-.game_over:
+game_over:
     mov dx, msg
     mov ah, 0x09       ; Print string
     int 0x21

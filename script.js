@@ -104,7 +104,7 @@ function createTicketCanvas(ticketData) {
     ctx.fillText(`Name: ${ticketData.name}`, 40, infoStartY);
     ctx.fillText(`Age: ${ticketData.age}`, 40, infoStartY + lineHeight);
     ctx.fillText(`Gender: ${ticketData.gender}`, 40, infoStartY + lineHeight * 2);
-    ctx.fillText(`Price: $${ticketData.price}`, 40, infoStartY + lineHeight * 3);
+    ctx.fillText(`Price: CHF${ticketData.price}`, 40, infoStartY + lineHeight * 3);
     
     ctx.fillText(`Visit Date: ${formatDate(ticketData.visitDate)}`, 40, infoStartY + lineHeight * 4);
     ctx.fillText(`Valid Until: ${formatDate(ticketData.validUntil)}`, 40, infoStartY + lineHeight * 5);
