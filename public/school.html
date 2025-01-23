@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WildLife Zoo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="#" class="logo">🦁 Wildtier Zooh</a>
+        <div class="nav-links">
+          <a href="#home">Startseite</a>
+          <a href="#animals">Tiere</a>
+          <a href="#tickets">Tickets</a>
+          <a href="#contact">Kontakt</a>
+          <a href="#schools">Schulen</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Wildtier Zooh</h1>
+        <p>Erleben Sie die Wunder der Natur auf einer unvergesslichen Reise</p>
+        <a href="#tickets" class="cta-button">Buchen Sie Ihr Abenteuer</a>
+      </div>
+    </section>
+
+    <section id="animals" class="section">
+      <h2 class="section-title">Unsere Tiere</h2>
+      <div class="animals-grid">
+        <div class="animal-card">
+          <img src="scr/img/lion.jpg" alt="Löwe" class="animal-img" />
+          <div class="animal-info">
+            <h3>Afrikanischer Löwe</h3>
+            <p>
+              Erleben Sie die Kraft und Majestät unseres Löwenrudels in ihrer
+              natürlichen Umgebung.
+            </p>
+          </div>
+        </div>
+        <div class="animal-card">
+          <img src="scr/img/elepfant.jpg" alt="Elefant" class="animal-img" />
+          <div class="animal-info">
+            <h3>Asiatischer Elefant</h3>
+            <p>
+              Beobachten Sie, wie unsere intelligenten Elefanten in ihrem
+              großzügigen Schutzgebiet interagieren und spielen.
+            </p>
+          </div>
+        </div>
+        <div class="animal-card">
+          <img src="scr/img/pinguin.jpg" alt="Pinguin" class="animal-img" />
+          <div class="animal-info">
+            <h3>Kaiserpinguin</h3>
+            <p>
+              Tauchen Sie ein in die Welt unserer charismatischen Pinguine in
+              ihrer arktischen Umgebung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- Add to index.html -->
+<section id="schools" class="section">
+  <h2 class="section-title">Schulbuchungen</h2>
+  <form class="ticket-form school-form" id="schoolForm">
+    <div class="form-group">
+      <label for="schoolName">Schulname</label>
+      <input type="text" id="schoolName" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="contactEmail">Kontakt Email</label>
+      <input type="email" id="contactEmail" required>
+    </div>
+
+    <div class="form-group">
+      <label>Ticket Quantities</label>
+      <div class="ticket-quantity">
+        <div class="quantity-control">
+          <label>Erwachsene</label>
+          <button type="button" class="quantity-minus" data-type="adult">-</button>
+          <input type="number" id="adultQty" value="0" min="0" class="qty-input" data-price="27">
+          <button type="button" class="quantity-plus" data-type="adult">+</button>
+        </div>
+        
+        <div class="quantity-control">
+          <label>Jugendliche</label>
+          <button type="button" class="quantity-minus" data-type="youth">-</button>
+          <input type="number" id="youthQty" value="0" min="0" class="qty-input" data-price="22">
+          <button type="button" class="quantity-plus" data-type="youth">+</button>
+        </div>
+
+        <div class="quantity-control">
+          <label>Kinder (6-15)</label>
+          <button type="button" class="quantity-minus" data-type="child">-</button>
+          <input type="number" id="childQty" value="0" min="0" class="qty-input" data-price="14">
+          <button type="button" class="quantity-plus" data-type="child">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Gesamtbetrag:</label>
+      <div id="schoolTotal" class="total-display">CHF 0.00</div>
+    </div>
+
+    <button type="submit" class="ticket-submit">Rechnung erstellen</button>
+  </form>
+</section>
+    <!-- Add this to your modal HTML -->
+    <div class="modal" id="ticketModal">
+      <div class="modal-content">
+        <h2>Ihr Ticket</h2>
+        <div id="ticketPreview"></div>
+        <div id="qrcode" style="display: none"></div>
+        <button class="close-modal" onclick="closeModal()">Schließen</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
